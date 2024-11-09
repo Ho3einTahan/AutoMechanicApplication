@@ -42,23 +42,19 @@ class HomeScreen extends StatelessWidget {
       child: Container(
         width: 220,
         height: 65,
-        padding: EdgeInsets.symmetric(vertical: 16),
+        padding: EdgeInsets.all(8),
         decoration: BoxDecoration(
-          color: Colors.yellow[700],
-          borderRadius: BorderRadius.circular(16),
-          boxShadow: [
-            BoxShadow(color: Colors.yellow.withOpacity(0.5), blurRadius: 10, offset: Offset(0, 6)),
-          ],
-          gradient: LinearGradient(
-            colors: [Colors.yellow[700]!, Colors.orangeAccent],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-        ),
+            color: Colors.yellow[700],
+            borderRadius: BorderRadius.circular(16),
+            boxShadow: [
+              BoxShadow(color: Colors.yellow.withOpacity(0.5), blurRadius: 10, offset: Offset(0, 6)),
+            ],
+            gradient: LinearGradient(colors: [Colors.yellow[700]!, Colors.orangeAccent], begin: Alignment.topLeft, end: Alignment.bottomRight)),
         child: Center(
           child: Text(
             'مشاهده سرویس‌های دوره‌ای',
-            style: TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
           ),
         ),
       ),
